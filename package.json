@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@3d-dice/dice-parser-interface": "^0.2.0",
+    "handlebars": "^4.7.7"
+  }
+}
