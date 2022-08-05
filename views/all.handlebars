@@ -5,13 +5,13 @@
     </h2>
   </div>
   <!-- We implement the built-in helper, #each. This helper will iterate over dishes -->
-  {{#each drinks as |drink|}}
+  {{#each cocktails as |cocktail|}}
   <!-- For each drink in the array of drink objects, the following <div> will be rendered. -->
     <div class="drink col-md-5">
       <!-- We use drink.id to pull drinks from the db-->
       <p>
-        {{drink.id}}.
-        {{drink.drink_name}}
+        {{cocktail.id}}.
+        {{cocktail.cocktail_name}}
       </p>
     </div>
     {{!-- <div class="col-md-7">
@@ -22,7 +22,12 @@
     </div> --}}
     <div class="col-md-7">
       <p>
-       {{drink.directions}}
+       {{cocktail.ingridients}}
+      </p>
+    </div>
+    <div class="col-md-7">
+      <p>
+       {{cocktail.preparation}}
       </p>
     </div>
     <!-- Below, we close the #each helper. -->
