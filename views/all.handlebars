@@ -1,0 +1,30 @@
+<div class="menu-container">
+  <div class="card-header col-md-10">
+    <h2>
+      &#127869 Cocktail Recipes
+    </h2>
+  </div>
+  <!-- We implement the built-in helper, #each. This helper will iterate over dishes -->
+  {{#each drinks as |drink|}}
+  <!-- For each drink in the array of drink objects, the following <div> will be rendered. -->
+    <div class="drink col-md-5">
+      <!-- We use drink.id to pull drinks from the db-->
+      <p>
+        {{drink.id}}.
+        {{drink.drink_name}}
+      </p>
+    </div>
+    {{!-- <div class="col-md-7">
+     TODO: Need to figure out how to parse through ingredients and structure into UL ::TODO
+      <ul>
+       {{drink.directions}}
+      </ul>
+    </div> --}}
+    <div class="col-md-7">
+      <p>
+       {{drink.directions}}
+      </p>
+    </div>
+    <!-- Below, we close the #each helper. -->
+  {{/each}}
+</div>
