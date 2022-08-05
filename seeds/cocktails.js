@@ -1,7 +1,5 @@
 const { Cocktail } = require('../models');
 
-// const cocktailData = const { Category } = require('../models');
-
 const cocktailData = [
     {
         "cocktail_name": "Flor de Amaras",
@@ -7561,10 +7559,6 @@ const cocktailData = [
         "Notes": ""
     }
 ];
-
-// const seedCategories = () => Category.bulkCreate(categoryData);
-
-// module.exports = seedCategories;;
 
 const seedCocktails = () => Cocktail.bulkCreate(cocktailData);
 
