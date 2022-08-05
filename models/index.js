@@ -1,4 +1,4 @@
-const Cocktail = require('./cocktail');
+const Cocktail = require('./Cocktail');
 
 
 

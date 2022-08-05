@@ -16,7 +16,7 @@ Cocktail.init(
       allowNull: false,
     },
     preparation: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: true,
     },
     garnish: {
