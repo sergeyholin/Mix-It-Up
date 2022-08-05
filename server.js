@@ -1,7 +1,7 @@
 const path = require('path');
 // Express requires
 const express = require("express")
-const routes = require('./routes');
+// const routes = require('./routes');
 // Handlebars requires
 const exphbs = require('express-handlebars');
 
@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 3001;
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 // Express rerouting
-app.use(routes);
+// app.use(routes);
 
 // Set Handlebars as the default template engine.
 app.engine('handlebars', hbs.engine);
