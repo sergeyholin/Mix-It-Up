@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { Cocktail } = require('../models');
 
-// route to get all Coktails
+// Get all cocktails from the db Route.
 router.get('/', async (req, res) => {
     const cocktailData = await Cocktail.findAll().catch((err) => { 
         res.json(err);
