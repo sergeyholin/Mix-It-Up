@@ -1,5 +1,14 @@
 const router = require('express').Router();
 const { Cocktail } = require('../models');
+// const search = "Vodka"
+
+// router.get('/', async (req, res) => {
+//   const partial = await Cocktail.findAll({
+//     where: Sequelize.where(Sequelize.col('ingredients')), {
+//       [Op.iLike]: `%${search}%`
+//     });
+  
+//   });
 
 // Get all cocktails from the db Route.
 router.get('/', async (req, res) => {
