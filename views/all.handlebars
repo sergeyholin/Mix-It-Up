@@ -1,5 +1,5 @@
 <div class="menu-container">
-  <div class="card-header col-md-10">
+  <div class="card col-md-10">
     <h2>
       &#127869 Cocktail Recipes
     </h2>
@@ -7,7 +7,7 @@
   <!-- We implement the built-in helper, #each. This helper will iterate over dishes -->
   {{#each cocktails as |cocktail|}}
   <!-- For each drink in the array of drink objects, the following <div> will be rendered. -->
-    <div class="drink col-md-5">
+    <div class="card col-md-5">
       <!-- We use drink.id to pull drinks from the db-->
       <p>
         {{cocktail.id}}.
