@@ -1,5 +1,21 @@
-<div class="menu-container">
-  <div class="card-header col-md-10">
+<header class = "header">
+    <h1>The Cocktail Database</h1>
+  </header>
+  <nav>
+    <a href="/">Home</a>
+    {{!-- {{#if loggedIn}} --}}
+    {{!-- <button id="logout" class="btn-no-style">Logout</button>
+    {{else}}
+    <a href="/login">Login</a> --}}
+    {{!-- {{/if}} --}}
+  </nav>
+  <main>
+    <aside>
+      <h2>Let's Pick A Cocktail</h2>
+    </aside>
+    <div class="gallery">
+<div class="container">
+  <div class="card col-md-10">
     <h2>
       &#127869 Cocktail Recipes
     </h2>
@@ -7,29 +23,26 @@
   <!-- We implement the built-in helper, #each. This helper will iterate over dishes -->
   {{#each cocktails as |cocktail|}}
   <!-- For each drink in the array of drink objects, the following <div> will be rendered. -->
-    <div class="drink col-md-5">
+    <div class="card col-md-4">
       <!-- We use drink.id to pull drinks from the db-->
-      <p>
-        {{cocktail.id}}.
-        {{cocktail.cocktail_name}}
-      </p>
+      <h4>{{cocktail.cocktail_name}}</h4>
+      <br>
+      <p>Ingredients:</p>
+      <p>{{cocktail.ingredients}}</p>
+      <br>
+      <p>Directions:</p>
+      <p>{{cocktail.preparation}}</p>
+      <br>
+      <p>Garnish:</p> 
+      <p>{{cocktail.garnish}}</p>  
     </div>
-    {{!-- <div class="col-md-7">
-     TODO: Need to figure out how to parse through ingredients and structure into UL ::TODO
-      <ul>
-       {{drink.directions}}
-      </ul>
-    </div> --}}
-    <div class="col-md-7">
-      <p>
-       {{cocktail.ingridients}}
-      </p>
-    </div>
-    <div class="col-md-7">
-      <p>
-       {{cocktail.preparation}}
-      </p>
-    </div>
+    
+  </div>
     <!-- Below, we close the #each helper. -->
   {{/each}}
 </div>
+</div>
+  </main>
+  {{!-- {{#if loggedIn}}
+  <script src="/js/logout.js"></script>
+  {{/if}} --}}
