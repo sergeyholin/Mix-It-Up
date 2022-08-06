@@ -1,5 +1,5 @@
-const router = require('express').Router();
-const { Cocktail } = require('../../models');
+const router = require("express").Router();
+const { Cocktail } = require("../../models");
 const { Sequelize, Op } = require("sequelize");
 
 // router.get('/:cocktail_name', async (req, res) => {
@@ -9,8 +9,7 @@ const { Sequelize, Op } = require("sequelize");
 //     const CocktailData = await Cocktail.findOne({
 //     where: {cocktail_name: req.params.cocktail_name},
 //     // where: { name: { [Op.like]: `%${"Hapiness"}%` } },
-    
-   
+
 //     });
 
 //     res.status(200).json(CocktailData);
@@ -19,19 +18,19 @@ const { Sequelize, Op } = require("sequelize");
 //   }
 // });
 
-router.get('/:cocktail_name', async (req, res) => {
+router.get("/:cocktail_name", async (req, res) => {
   // const { result } = req.query;
   try {
-    const CocktailData = await Cocktail.findOne({
-    // where: {cocktail_name: req.params.cocktail_name},
-    // const { result } = req.query;
-    
-    where: {
-      cocktail_name: {
-       [Op.like]: '%' + result + '%',
-      },
-     },
+    const CocktailData = await Cocktail.findone({
+      // where: {cocktail_name: req.params.cocktail_name},
+      // const { result } = req.query;
 
+      where: {
+        
+        cocktail_name: {
+          [Op.like]: "%" + result + "%",
+        },
+      },
     });
 
     res.status(200).json(CocktailData);
@@ -42,4 +41,4 @@ router.get('/:cocktail_name', async (req, res) => {
 
 
 
-  module.exports = router;
+module.exports = router;
