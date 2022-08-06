@@ -1,3 +1,19 @@
+<header class = "header">
+    <h1>The Cocktail Database</h1>
+  </header>
+  <nav>
+    <a href="/">Home</a>
+    {{!-- {{#if loggedIn}} --}}
+    {{!-- <button id="logout" class="btn-no-style">Logout</button>
+    {{else}}
+    <a href="/login">Login</a> --}}
+    {{!-- {{/if}} --}}
+  </nav>
+  <main>
+    <aside>
+      <h2>Let's Pick A Cocktail</h2>
+    </aside>
+    <div class="gallery">
 <div class="container">
   <div class="card col-md-10">
     <h2>
@@ -25,3 +41,8 @@
     <!-- Below, we close the #each helper. -->
   {{/each}}
 </div>
+</div>
+  </main>
+  {{!-- {{#if loggedIn}}
+  <script src="/js/logout.js"></script>
+  {{/if}} --}}
