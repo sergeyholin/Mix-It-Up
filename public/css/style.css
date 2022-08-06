@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --primary: #389393;
   --secondary: #f5a25d;
   --tertiary: #fa7f72;
@@ -95,10 +95,10 @@ nav {
   padding: 50px;
   text-align: center;
   background-color: var(--tertiary);
-}
+} */
 
 /* CARDS */
-.dish-card {
+.card {
   margin: 20px;
   flex: 0 1 300px;
   padding: 5px;
@@ -113,7 +113,7 @@ nav {
   color: var(--dark);
 }
 
-.menu-card {
+/* .menu-card {
   margin: 50px;
   flex: 0 1 300px;
   padding: 5px;
@@ -153,7 +153,7 @@ nav {
   padding: 2.5%;
   font-size: 1.4rem;
   text-align: center;
-}
+} */
 
 /* LAYOUT */
 .container {

@@ -15,7 +15,7 @@ Cocktail.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    ingridients: {
+    ingredients: {
       type: DataTypes.TEXT,
       allowNull: true,
     },
