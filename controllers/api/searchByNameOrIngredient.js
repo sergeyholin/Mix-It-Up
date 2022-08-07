@@ -31,7 +31,10 @@ router.get("/:cocktail_name", async (req, res) => {
   });
   } catch (err) {
     res.status(500).json(err);
+    const cocktails = cocktailData.map((cocktail) => cocktail.get({ plain: true }));
+    res.render('all', { cocktails });
   }
+
 });
 
 module.exports = router;

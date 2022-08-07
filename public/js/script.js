@@ -1,3 +1,11 @@
+const result = document.getElementById(myInput.value);
+
+function searchFunction() {
+    result = document.getElementById("myInput");
+ }
+
+
+
 // async function newFormHandler(event) {
 //     event.preventDefault();
 //     const drink_name = document.querySelector('#drink_name').value;
@@ -24,3 +32,4 @@
 //   }
   
 //   document.querySelector('.new-dish-form').addEventListener('submit', newFormHandler);
+module.exports = result
