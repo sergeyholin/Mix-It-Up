@@ -7,7 +7,7 @@ function toggle(){
 }
 
 function searchFunction() {
-    result = document.getElementById("myInput");
+    result = document.getElementById(myInput.value);
  }
 
 
