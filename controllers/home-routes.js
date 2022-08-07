@@ -16,7 +16,7 @@ router.get('/', async (req, res) => {
         res.json(err);
       });
         const cocktails = cocktailData.map((cocktail) => cocktail.get({ plain: true }));
-        res.render('all', { cocktails });
+        res.render('', { cocktails });
       });
 
 module.exports = router;
