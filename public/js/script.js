@@ -1,5 +1,7 @@
-function myFunction() {
-    var x = document.getElementById("myInput");
+const result = document.getElementById(myInput.value);
+
+function searchFunction() {
+    result = document.getElementById("myInput");
  }
 
 
@@ -30,3 +32,4 @@ function myFunction() {
 //   }
   
 //   document.querySelector('.new-dish-form').addEventListener('submit', newFormHandler);
+module.exports = result
