@@ -1,3 +1,9 @@
+function myFunction() {
+    var x = document.getElementById("myInput");
+ }
+
+
+
 // async function newFormHandler(event) {
 //     event.preventDefault();
 //     const drink_name = document.querySelector('#drink_name').value;
