@@ -1,5 +1,11 @@
 const result = document.getElementById(myInput.value);
 
+
+function toggle(){
+    var blur = document.getElementById('blur')
+    blur.classlist.toggle('active')
+}
+
 function searchFunction() {
     result = document.getElementById("myInput");
  }
