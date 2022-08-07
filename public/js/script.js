@@ -1,9 +1,21 @@
 const result = "gin"
 // document.getElementById(myInput.value);
 
+
 // function searchFunction() {
 //     result = document.getElementById("myInput");
 //  }
+
+
+function toggle(){
+    var blur = document.getElementById('blur')
+    blur.classlist.toggle('active')
+}
+
+function searchFunction() {
+    result = document.getElementById("myInput");
+ }
+
 
 
 
