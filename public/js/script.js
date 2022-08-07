@@ -1,4 +1,10 @@
-const result = document.getElementById(myInput.value);
+const result = "gin"
+// document.getElementById(myInput.value);
+
+
+// function searchFunction() {
+//     result = document.getElementById("myInput");
+//  }
 
 
 function toggle(){
@@ -9,6 +15,7 @@ function toggle(){
 function searchFunction() {
     result = document.getElementById(myInput.value);
  }
+
 
 
 
