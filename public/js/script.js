@@ -1,23 +1,18 @@
-const result = "gin"
+const result = "gin";
 // document.getElementById(myInput.value);
-
 
 // function searchFunction() {
 //     result = document.getElementById("myInput");
 //  }
 
-
-function toggle(){
-    var blur = document.getElementById('blur')
-    blur.classlist.toggle('active')
+function toggle() {
+  var blur = document.getElementById("blur");
+  blur.classlist.toggle("active");
 }
 
 function searchFunction() {
-    result = document.getElementById(myInput.value);
- }
-
-
-
+  result = document.getElementById(myInput.value);
+}
 
 // async function newFormHandler(event) {
 //     event.preventDefault();
@@ -43,6 +38,6 @@ function searchFunction() {
 //       alert('Failed to add drink');
 //     }
 //   }
-  
+
 //   document.querySelector('.new-dish-form').addEventListener('submit', newFormHandler);
-module.exports = result
+// module.exports = result;
