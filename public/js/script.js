@@ -1,5 +1,8 @@
 var result = "gin";
+
+
 // document.getElementById(myInput.value);
+
 
 function searchFunction(event) {
   event.preventDefault();  
@@ -12,9 +15,6 @@ function toggle() {
   var blur = document.getElementById("blur");
   blur.classlist.toggle("active");
 }
-
-
-
 
 // async function newFormHandler(event) {
 //     event.preventDefault();
@@ -42,4 +42,5 @@ function toggle() {
 //   }
 
 //   document.querySelector('.new-dish-form').addEventListener('submit', newFormHandler);
+
 module.exports = result;
