@@ -17,7 +17,7 @@
     <!-- ======================Copy to handle bar from below this point============================= -->
     <div id="background" class="text-center">
       <main class="card-search w-100 m-auto">
-        <form class="data-bs-parent="#selector"">
+        <form>
           <img
             class="mb-4"
             src="../../../public/assets/images/mixituplogodarkcropped.png"
@@ -25,13 +25,26 @@
             width="55%vw"
             height="auto"
           />
+          <!-- <p>
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              Link with href
+            </a>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              Button with data-bs-target
+            </button>
+          </p>
+          <div class="collapse" id="collapseExample" >
+            <div class="card card-body">
+              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+            </div>
+          </div> -->
           <p>
-            <a class="btn btn-primary" data-bs-toggle="collapse" href="#logIn" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <button class="btn btn-primary" type='button' data-toggle="collapse" data-target='#logIn' aria-expanded="false" aria-controls="logIn">
               Log In
-            </a>
-            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+            </button>
+            <button class="btn btn-primary" type='button' data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
               Sign Up
-            </a>
+            </button>
           </p>
           <div class="collapse" id="logIn">
             <div class="card card-body">

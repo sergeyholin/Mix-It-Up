@@ -1,12 +1,10 @@
 const router = require("express").Router();
 const { Cocktail } = require("../../models");
 const { Sequelize, Op } = require("sequelize");
-const result = require("../../public/js/script")
 
-// Get cocktail by name or ingredient [by keyword] route.
+// Static search route
 router.get("/:cocktail_name", async (req, res) => {
-  // const result = req.params.cocktail_name;
-  // const result = "martini";
+  const result = req.params.cocktail_name;
   console.log(result)
   try {
     const cocktailData = await Cocktail.findAll({
@@ -25,7 +23,6 @@ router.get("/:cocktail_name", async (req, res) => {
       ]
       }
     });
-  //   // res.status(200).json(cocktailData);
     const cocktails = cocktailData.map((cocktail) => cocktail.get({ plain: true }));
     res.render('all', { 
       cocktails 
@@ -37,4 +34,3 @@ router.get("/:cocktail_name", async (req, res) => {
 });
 
 module.exports = router;
-
