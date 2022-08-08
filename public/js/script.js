@@ -1,16 +1,20 @@
-const result = "gin";
+var result = "gin";
+
+
 // document.getElementById(myInput.value);
 
-function searchFunction() {
-    result = document.getElementById("myInput");
+
+function searchFunction(event) {
+  event.preventDefault();  
+  let result = document.getElementById("search-bar").value;
+  alert(result);
+  console.log(result);
  }
 
 function toggle() {
   var blur = document.getElementById("blur");
   blur.classlist.toggle("active");
 }
-
-
 
 // async function newFormHandler(event) {
 //     event.preventDefault();
@@ -38,4 +42,5 @@ function toggle() {
 //   }
 
 //   document.querySelector('.new-dish-form').addEventListener('submit', newFormHandler);
-module.exports = r;
+
+module.exports = result;

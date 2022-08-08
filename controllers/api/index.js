@@ -1,10 +1,13 @@
 const router = require('express').Router();
 const userRoutes = require('./userRoutes');
-const searchByNameOrIngredient = require('./searchByNameOrIngredient');
+const displayStatic = require('./staticSearch')
 const displayAll = require('./displayAll');
+const searchByNameOrIngredient = require('./searchByNameOrIngredient');
+
 
 router.use('/users', userRoutes);
-router.use('/search', searchByNameOrIngredient);
 router.use('/display_all', displayAll);
+router.use('/static', displayStatic);
+router.use('/search', searchByNameOrIngredient);
 
 module.exports = router;
