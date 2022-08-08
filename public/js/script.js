@@ -42,9 +42,7 @@ function toggle() {
 //   }
 
 //   document.querySelector('.new-dish-form').addEventListener('submit', newFormHandler);
-<<<<<<< HEAD
-module.exports = search;
-=======
+
 
 module.exports = result;
->>>>>>> 78220f3f8dc93c39d68d2dcc732a4fcd7e878a72
+
