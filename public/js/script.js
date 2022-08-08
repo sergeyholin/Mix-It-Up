@@ -42,4 +42,4 @@ function toggle() {
 //   }
 
 //   document.querySelector('.new-dish-form').addEventListener('submit', newFormHandler);
-module.exports = result;
+module.exports = search;
