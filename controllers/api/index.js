@@ -1,6 +1,8 @@
 const router = require('express').Router();
-const seearchByNameRoutes = require('./searchByName');
+const searchByNameOrIngredient = require('./searchByNameOrIngredient');
+const displayAll = require('./displayAll');
 
-router.use('/name', seearchByNameRoutes);
+router.use('/search', searchByNameOrIngredient);
+router.use('/display_all', displayAll);
 
 module.exports = router;

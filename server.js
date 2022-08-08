@@ -33,7 +33,6 @@ const sess = {
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 // Express rerouting
-// app.use(routes);
 
 // Set Handlebars as the default template engine.
 app.engine("handlebars", hbs.engine);
