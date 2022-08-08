@@ -209,3 +209,21 @@ h6 {
 .mb-4, .my-4 {
    margin-bottom: 0; /* margin-bottom: 1.5rem!important; */
 }
+.form-group {
+  color: black;
+  font-weight: bold;
+}
+
+.page-title {
+  color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.card-body {
+  background-color: brown;
+}
+
+.login-card {
+  background-color: burlywood;
+}
+
