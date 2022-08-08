@@ -1,11 +1,11 @@
 const router = require("express").Router();
 const { Cocktail } = require("../../models");
 const { Sequelize, Op } = require("sequelize");
-const result = require("../../public/js/script")
+// const result = require("../../public/js/script")
 
 // Get cocktail by name or ingredient [by keyword] route.
 router.get("/:cocktail_name", async (req, res) => {
-  // const result = req.params.cocktail_name;
+  const result = req.params.cocktail_name;
   // const result = "martini";
   console.log(result)
   try {
