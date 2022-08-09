@@ -4,17 +4,41 @@
 // document.getElementById(myInput.value);
 
 
-function searchFunction(event) {
-  event.preventDefault();  
-  let result = document.getElementById("search-bar").value;
-  alert(result);
-  console.log(result);
- }
+// function searchFunction(event) {
+//   event.preventDefault();  
+//   let result = document.getElementById("search-bar").value;
+//   alert(result);
+//   console.log(result);
+//  }
 
 function toggle() {
   var blur = document.getElementById("blur");
   blur.classlist.toggle("active");
 }
+// ---------------------------------------------------------
+const searchFunction = async (event) => {
+  event.preventDefault();
+
+  const result = document.getElementById("search-bar").value.trim();
+ location.replace(`/api/search/${result}`);
+  // if (result) {
+  //   const response =await fetch('/search', {
+  //     method: 'POST',
+  //     body: JSON.stringify({result}),
+  //     headers: {
+  //       'Content-Type': 'application/json',
+  //     },
+  //   });
+
+  //   if (response.ok) {
+  //     document.location.replace('/api/display_all');
+
+  //   } else {
+  //     alert('Failed to search');
+  //   }
+  // }
+};
+// ------------------------------------------------------
 
 
 // async function newFormHandler(event) {
@@ -175,7 +199,7 @@ var randomIndex = Math.floor(Math.random()*picArray.length);
 var randomPic = picArray[randomIndex];
 console.log(randomPic);
 
-var panelBody = window.getElementById("panelImage");
+var panelBody = document.getElementById("panelImage");
 panelBody.style.backgroundImage = drinkPics[randomPic].image; 
 
 
