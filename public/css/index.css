@@ -276,8 +276,9 @@ h6 {
 #logOut {
   z-index: 10;
   position:absolute;
-  top:0;
+  top:5;
   right:0;
+  color:white;
 }
 
 .panel-heading {
@@ -287,4 +288,32 @@ h6 {
   border-top-right-radius: 3px;
   background-color: grey;
   color: gainsboro;
+}
+.panel-footer {
+  padding: 10px 15px;
+  background-color: dark grey;
+  border-top: 1px solid #ddd;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  display:flex;
+}
+.modal-title {
+  margin: 0;
+  line-height: 1.42857143;
+  color: gainsboro;
+  background: grey;
+}
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  border: none;
+  border-color: none;
+  background:none;
+}
+.h4, h4 {
+  font-size: 18px;
+  padding-left: 20px;
+  padding-bottom: 7px;
+  color: grey;
 }
