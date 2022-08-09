@@ -16,19 +16,6 @@ function toggle() {
   blur.classlist.toggle("active");
 }
 
-<<<<<<< HEAD
-//title into a variable
-
-
-
-
-
-
-
-
-
-=======
->>>>>>> 1f805a3a9957166d77f03b8234df28981c83c206
 
 // async function newFormHandler(event) {
 //     event.preventDefault();
@@ -188,8 +175,8 @@ var randomIndex = Math.floor(Math.random()*picArray.length);
 var randomPic = picArray[randomIndex];
 console.log(randomPic);
 
-var panelBody = document.getElementById("panelImage");
-panelBody.style.backgroundImage = drinkPics[randomPic].image; 
+// var panelBody = document.getElementById("panelImage");
+// panelBody.style.backgroundImage = drinkPics[randomPic].image; 
 
 
 
