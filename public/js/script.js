@@ -199,8 +199,8 @@ const searchFunction = async (event) => {
 // var randomPic = picArray[randomIndex];
 // console.log(randomPic);
 
-// var panelBody = document.getElementById("panelImage");
-// panelBody.style.backgroundImage = drinkPics[randomPic].image; 
+var panelBody = document.getElementById("panelImage");
+panelBody.style.backgroundImage = drinkPics[randomPic].image; 
 
 
 
