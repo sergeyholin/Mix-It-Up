@@ -1,9 +1,7 @@
 const router = require('express').Router();
-const withAuth = require('../utils/auth');
+// const withAuth = require('../utils/auth');
 
-// Landing page.
-router.get('/login', async (req, res) => {
-  // logged_in: req.session.logged_in 
+router.get('/', async (req, res) => { 
   res.render('login');
 });
 

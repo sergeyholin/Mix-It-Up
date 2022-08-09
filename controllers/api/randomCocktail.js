@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const { Cocktail } = require('../../models');
+const withAuth = require('../../utils/auth');
 
 // 
 var min = 0
@@ -16,7 +17,7 @@ function getRandomIntInclusive(min, max) {
 // Grabbing random number, and plugging it in inside pick a meme data array
 var randomNumber =  getRandomIntInclusive(min, max);
 
-router.get('/:id', async (req, res) => {
+router.get('/:id', withAuth, async (req, res) => {
     try {
       const cocktailData = await Cocktail.findOne({
       where: {id: req.params.id},
