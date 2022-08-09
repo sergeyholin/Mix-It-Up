@@ -175,7 +175,7 @@ var randomIndex = Math.floor(Math.random()*picArray.length);
 var randomPic = picArray[randomIndex];
 console.log(randomPic);
 
-var panelBody = document.getElementById("panelImage");
+var panelBody = window.getElementById("panelImage");
 panelBody.style.backgroundImage = drinkPics[randomPic].image; 
 
 
