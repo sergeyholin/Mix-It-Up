@@ -5,7 +5,7 @@ const session = require('express-session');
 const routes = require('./controllers');
 const helpers = require('./utils/helpers');
 
-// const sequelize = require('./config/connection');
+const sequelize = require('./config/connection');
 const hbs = exphbs.create({ helpers });
 
 // Express dependencies
@@ -37,10 +37,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(routes);
 
 // Start server to begin listening
-app.listen(PORT, () => {
-console.log(`App listening on port ${PORT}!`);
-});
-
-// sequelize.sync({ force: false }).then(() => {
-//   app.listen(PORT, () => console.log('Now listening'));
+// app.listen(PORT, () => {
+// console.log(`App listening on port ${PORT}!`);
 // });
+
+sequelize.sync({ force: false }).then(() => {
+  app.listen(PORT, () => console.log('Now listening'));
+});
