@@ -16,6 +16,17 @@ function toggle() {
   blur.classlist.toggle("active");
 }
 
+//title into a variable
+
+
+
+
+
+
+
+
+
+
 // async function newFormHandler(event) {
 //     event.preventDefault();
 //     const drink_name = document.querySelector('#drink_name').value;
