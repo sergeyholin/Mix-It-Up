@@ -273,8 +273,9 @@ h6 {
   background-color: burlywood;
 }
 
-#exitbut {
-  color:#fff;
-  font-size: larger;
-  background-color: #fff;
+#logOut {
+  z-index: 10;
+  position:absolute;
+  top:0;
+  right:0;
 }
