@@ -1,7 +1,8 @@
 const router = require('express').Router();
+const withAuth = require('../utils/auth');
 
 // Landing page.
-router.get('/', async (req, res) => {
+router.get('/', withAuth, async (req, res) => {
 
   res.render('landing');
 });
