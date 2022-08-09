@@ -17,33 +17,19 @@ function getRandomIntInclusive(min, max) {
 // Grabbing random number, and plugging it in inside pick a meme data array
 var randomNumber =  getRandomIntInclusive(min, max);
 
-router.get("/:id", async (req, res) => {
-  // const result = req.params.cocktail_name;
-  // console.log(result)
+router.get("/", async (req, res) => {
+
   try {
-    const cocktailData = await Cocktail.findOne({
-      where: {id: req.params.id},
-      // where: {
-      //   [Op.or]: [
-      //     {
-      //         cocktail_name: {
-      //             [Op.like]: '%' + result + '%'
-      //         }
-      //     },
-      //     {
-      //         ingredients: {
-      //             [Op.like]: '%' + result + '%'
-      //         }
-      //     }
-      // ]
-      // }
+    const cocktailData = await Cocktail.findAll({
+      where: {id: getRandomIntInclusive(min, max)},
+
     });
-    console.log(cocktailData)
-    // res.status(200).json(cocktailData);
-    const cocktail = cocktailData.get({ plain: true });
+
+    const cocktails = cocktailData.map((cocktail) => cocktail.get({ plain: true }));
     // res.redirect(`/api/random/${randomNumber}`);
-  //   const cocktails = cocktailData.map((cocktail) => cocktail.get({ plain: true }));
-  res.render('all', cocktail);
+    res.render('all', { 
+      cocktails 
+  });
   } catch (err) {
     res.status(500).json(err);
   }
