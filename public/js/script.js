@@ -4,17 +4,40 @@
 // document.getElementById(myInput.value);
 
 
-function searchFunction(event) {
-  event.preventDefault();  
-  let result = document.getElementById("search-bar").value;
-  alert(result);
-  console.log(result);
- }
+// function searchFunction(event) {
+//   event.preventDefault();  
+//   let result = document.getElementById("search-bar").value;
+//   alert(result);
+//   console.log(result);
+//  }
 
 function toggle() {
   var blur = document.getElementById("blur");
   blur.classlist.toggle("active");
 }
+
+const searchFunction = async (event) => {
+  event.preventDefault();
+
+  const result = document.getElementById("search-bar").value.trim();
+
+  if (result) {
+    const response =await fetch('/search', {
+      method: 'POST',
+      body: JSON.stringify({result}),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+
+    if (response.ok) {
+      document.location.replace('./displayAll');
+    } else {
+      alert('Failed to search');
+    }
+  }
+};
+  
 
 
 // async function newFormHandler(event) {
