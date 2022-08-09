@@ -15,29 +15,30 @@ function toggle() {
   var blur = document.getElementById("blur");
   blur.classlist.toggle("active");
 }
-
+// ---------------------------------------------------------
 const searchFunction = async (event) => {
   event.preventDefault();
 
   const result = document.getElementById("search-bar").value.trim();
+ location.replace(`/api/search/${result}`);
+  // if (result) {
+  //   const response =await fetch('/search', {
+  //     method: 'POST',
+  //     body: JSON.stringify({result}),
+  //     headers: {
+  //       'Content-Type': 'application/json',
+  //     },
+  //   });
 
-  if (result) {
-    const response =await fetch('/search', {
-      method: 'POST',
-      body: JSON.stringify({result}),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
+  //   if (response.ok) {
+  //     document.location.replace('/api/display_all');
 
-    if (response.ok) {
-      document.location.replace('./displayAll');
-    } else {
-      alert('Failed to search');
-    }
-  }
+  //   } else {
+  //     alert('Failed to search');
+  //   }
+  // }
 };
-  
+// ------------------------------------------------------
 
 
 // async function newFormHandler(event) {
