@@ -1,9 +1,10 @@
 const router = require("express").Router();
 const { Cocktail } = require("../../models");
 const { Sequelize, Op } = require("sequelize");
+const withAuth = require('../../utils/auth');
 
 // Static search route
-router.get("/:cocktail_name", async (req, res) => {
+router.get("/:cocktail_name", withAuth, async (req, res) => {
   const result = req.params.cocktail_name;
   console.log(result)
   try {
