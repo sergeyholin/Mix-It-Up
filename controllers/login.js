@@ -1,10 +1,8 @@
 const router = require('express').Router();
-// const withAuth = require('../utils/auth');
 
+// Login/Signup page.
 router.get('/', async (req, res) => { 
   res.render('login');
 });
-
-
 
 module.exports = router;
