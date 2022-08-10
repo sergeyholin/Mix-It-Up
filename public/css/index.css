@@ -318,9 +318,9 @@ button, input, select, textarea {
   color: grey;
 }
 
-#loginRow {
+/* #loginRow {
   background: gray;
-}
+} */
 /* Log in Page Styling */
 #backgroundLogin {
     display: flex;
