@@ -48,12 +48,12 @@
         <input
           class="search-bar mr-sm-2"
           type="search"
-          id="myInput"
+          id="search-bar"
           onsearch="searchFunction()"
-          placeholder="Search"
+          placeholder="Recipe Name or Ingredient"
           aria-label="Search"
         />
-        <button id="allButton"><svg
+        <button id="allButton" onclick="searchFunction(event)"><svg
             stroke="currentColor"
             fill="currentColor"
             stroke-width="0"
@@ -83,11 +83,10 @@
               class="img-responsive"
               style="width:100%"
               alt="Image"
-
             />
-            </div>
+          </div>
           <div class="panel-footer"><button><svg
-            1f805a3a9957166d77f03b8234df28981c83c206
+                1f805a3a9957166d77f03b8234df28981c83c206
                 stroke="currentColor"
                 fill="currentColor"
                 stroke-width="0"
@@ -105,7 +104,7 @@
               data-target="#{{cocktail.id}}"
             ><h4>See Full Recipe</h4></a></div>
         </div>
-        {{!-- Modal Pop Out --}}
+        {{! Modal Pop Out }}
         <div
           class="modal fade"
           id="{{cocktail.id}}"
