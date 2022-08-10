@@ -1,3 +1,5 @@
+
+
 // For poping out and darkening background.
 function toggle() {
   var blur = document.getElementById("blur");
@@ -11,6 +13,8 @@ const searchFunction = async (event) => {
  location.replace(`/api/search/${result}`);
 
 };
+
+
 // ------------------------------------------------------
 
 

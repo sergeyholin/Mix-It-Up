@@ -1,9 +1,11 @@
 /* combined css */
 body {
-  background-color: #350024;
+  background-color: white;
 }
 
-
+.h2, h2 {
+font-size: 30px;
+}
 input.search-bar {
   border: none;
   outline: none;
@@ -27,6 +29,12 @@ h6 {
   font-size: smaller;
 }
 /* landing handlebar css */
+
+h6 {
+  font-size: 15px;
+  color: white;
+}
+
 #background {
   display: flex;
   justify-content: center;
@@ -46,6 +54,15 @@ h6 {
   width: 100%;
   max-width: 600px;
   margin: 1em;
+}
+
+.card-search:hover {
+  border-width:thin;
+  outline: 5px white;
+  border-radius: #fff !important;
+  box-shadow: 0px 0px 40px 20px #e33b9a;
+  text-decoration: none;
+  -webkit-text-decoration-skip: objects;
 }
 #floatingInput {
   display: flex;
@@ -82,9 +99,6 @@ h6 {
   background-color: #350024;
   background-position: 50px;
 }
-
-
-
 
 
 .navbar-nav>li>a {
@@ -217,11 +231,15 @@ input.search-bar {
   width: calc(100% - 100px);
 }
 input.search-bar:hover {
-  background: #7c7c7c6b;
+  background: #9a9a9a6b;
 }
 
 button:hover {
-  background: #7c7c7c6b;
+  background: #9a9a9a6b;
+}
+
+#landingButton:hover {
+  background: #9a9a9a6b;
 }
 
 h6 {
@@ -273,12 +291,13 @@ h6 {
   background-color: burlywood;
 }
 
-#logOut {
+#logout {
   z-index: 10;
   position:absolute;
   top:5;
   right:0;
   color:white;
+  background: none;
 }
 
 .panel-heading {
@@ -331,4 +350,112 @@ button, input, select, textarea {
     background-color: #350024;
     background-image: url("https://images.pexels.com/photos/5490965/pexels-photo-5490965.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
     background-size: cover;
+}
+
+#opacity {
+  opacity: .8;
+}
+
+.login-form:active {
+  opacity: 1;
+}
+
+.card-signUp{
+  background: #350024;
+  color: white;
+  padding: 2em;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 600px;
+  margin: 1em;
+  opacity: .8;
+ 
+}
+
+.card-signUp:hover {
+  opacity: 1;
+  border-width:thin;
+  outline: 5px white;
+  border-radius: #fff !important;
+  box-shadow: 0px 0px 40px 20px #e33b9a;
+  text-decoration: none;
+  -webkit-text-decoration-skip: objects;
+}
+  
+
+
+
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+  color: white;
+}
+
+#signUpHyperLink {
+  color:white;
+  font-weight: bolder;
+}
+
+table.center {
+margin-left:auto;
+margin-right: auto;
+}
+
+td {
+  text-align: right;
+  padding-right:5px;
+}
+
+input > textarea {
+  background-color: #be6f9c;
+}
+
+.modal-backdrop {
+  z-index: -1;
+  opacity:1;
+  top: -100px;
+}
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  border: none;
+  border-color: none;
+  background: #E7F0FE;
+}
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+  color: black;
+}
+#allButton:hover {
+  background:#9a9a9a6b;
+}
+
+button, input, select, textarea {
+  font-size: xx-large;
+  font-family: inherit;
+  font-size: larger;
+  line-height: inherit;
+  border: none;
+  border-color: none;
+  background: none;
+  /* height: 2em; */
+  /* width: 2em; */
+}
+svg:not(:root) {
+  overflow: hidden;
+  height: 1.5em;
+  width: 1.5em;
+}
+#shareButton {
+  position: relative;
+    right: -8px;
+    /* bottom: -4px; */
+    height: 2em;
+    width: 2em;
 }
