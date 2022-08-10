@@ -5,7 +5,7 @@ Project 2, Group 5
 
 ## Deployed Link
 Heroku Link: https://adadlaldalkmdlka.herokuapp.com/
-Github Repo Link: https://github.com/sergeyholin/Project-2
+Github Repo Link: https://github.com/sergeyholin/Mix-It-Up
 
 ## Inspiration
 What cocktails can you make with the ingredients currently in your kitchen? How do you recreate your favorite cocktail at home? We've made an app that can answer both of these questions in just a few clicks.
