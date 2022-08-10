@@ -1,4 +1,4 @@
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) ![Languages: 4](https://img.shields.io/github/languages/count/sergeyholin/Project-2?color=orange&style=plastic) ![Repo Size](https://img.shields.io/github/repo-size/sergeyholin/Project-2?label=Repo%20Size)
 
 # Mix It Up
 Project 2, Group 5
@@ -15,24 +15,27 @@ Our application Mix It Up allows visitors to the site to search through a databa
 
 ## User Story
 - User is presented with a homepage displaying Login & Sign Up buttons
-![]()
 
 - User is able to sign up for a profile and enter necessary credential information
 
-- Upon sign up, the user is presented with a page containing a search bar, a navbar with popular liquor types listed, and a 'Random' button.
-![]()
+- Upon sign up, the user is presented with a landing page containing a search bar, a navbar with popular liquor types listed, and a 'Random' button.
+![Landing Page](./public/assets/images/project-screenshots/landing.png)
 
 - If a user searches by cocktail name, they are presented with a page displaying an image of a cocktail, the name of the cocktail, and a modal with the recipe information
-![]()
+![Search results for 'Martini'](./public/assets/images/project-screenshots/searchbyname.png)
 
 - If a user searches by ingredient, they are presented with a page displaying multiple cards depicting cocktails that contain the input ingredient in the same fashion
-![]()
+![Search results for 'Lemon'](./public/assets/images/project-screenshots/searchbyingredientlemon.png)
 
 - Clicking an option listed on the navbar presents a page that displays cocktails containing the chosen liquor
-![]()
+![Search results for 'Vodka'](./public/assets/images/project-screenshots/searchbyingredientvodka.png)
+![Search results for 'Rum'](./public/assets/images/project-screenshots/searchbyingredientrum.png)
+![Search results for 'Whiskey'](./public/assets/images/project-screenshots/searchbyingredientwhiskey.png)
+![Search results for 'Tequila'](./public/assets/images/project-screenshots/searchbyingredienttequila.png)
+![Search results for 'Gin'](./public/assets/images/project-screenshots/searchbyingredientgin.png)
 
-- Clicking the 'Random' button displays a single cocktail chosen at random from the database
-![]()
+- Clicking the button on the left with the cards icon displays a single cocktail chosen at random from the database
+![Randomly Selected Cocktail](./public/assets/images/project-screenshots/random.png)
 
 
 ## Technologies Used
