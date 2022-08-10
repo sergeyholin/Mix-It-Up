@@ -24,7 +24,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><svg
+      <a class="navbar-brand" href="/api/random"><svg
           stroke="currentColor"
           fill="currentColor"
           stroke-width="0"
@@ -77,15 +77,14 @@
         <div class="panel">
           <div class="panel-heading"><h2>
               {{cocktail.cocktail_name}}</h2></div>
-          <div class="panel-body">
-             {{!-- <div class="panel-body" id="panelImage"></div> --}}
-            {{!-- <img
-              src=`${randomimage}`
+          <div class="panel-body" id="panelImage">
+            <img
+              src={{get_image}}
               class="img-responsive"
               style="width:100%"
               alt="Image"
 
-            /> --}}
+            />
             </div>
           <div class="panel-footer"><button><svg
             1f805a3a9957166d77f03b8234df28981c83c206
@@ -154,4 +153,3 @@
     </form>
   </footer> -->
 <script src="/js/script.js"></script>
-<script src="/js/images.js"></script>
