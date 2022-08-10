@@ -1,26 +1,15 @@
-// var result = "gin";
-
-
-// document.getElementById(myInput.value);
-
-
-// function searchFunction(event) {
-//   event.preventDefault();  
-//   let result = document.getElementById("search-bar").value;
-//   alert(result);
-//   console.log(result);
-//  }
-
+// For poping out and darkening background.
 function toggle() {
   var blur = document.getElementById("blur");
   blur.classlist.toggle("active");
 }
-// ---------------------------------------------------------
+// Search function for search bar.
 const searchFunction = async (event) => {
   event.preventDefault();
 
   const result = document.getElementById("search-bar").value.trim();
  location.replace(`/api/search/${result}`);
+<<<<<<< HEAD
   // if (result) {
   //   const response =await fetch('/search', {
   //     method: 'POST',
@@ -337,3 +326,6 @@ var drinkPics = {
 
 
 
+=======
+};
+>>>>>>> 28e20e11cf0a5b492cf8623dbb932ddfc07e90b0

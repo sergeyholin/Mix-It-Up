@@ -3,8 +3,9 @@ const { Cocktail } = require("../../models");
 const { Sequelize, Op } = require("sequelize");
 const withAuth = require('../../utils/auth');
 
-// Static search route
+// Static search route for preditermined searches (vodka,rum,whiskey,tequila,gin)
 router.get("/:cocktail_name", withAuth, async (req, res) => {
+// router.get("/:cocktail_name", async (req, res) => {
   const result = req.params.cocktail_name;
   console.log(result)
   try {
@@ -31,7 +32,6 @@ router.get("/:cocktail_name", withAuth, async (req, res) => {
   } catch (err) {
     res.status(500).json(err);
   }
-
 });
 
 module.exports = router;
