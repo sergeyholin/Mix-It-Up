@@ -486,3 +486,21 @@ button, input, select, textarea {
   /* height: 2em; */
   /* width: 2em; */
 }
+
+.font-black{
+  color:black
+}
+.modal-body {
+  background-color: gainsboro;
+  color: black;
+
+}
+.modal-footer {
+  background: gray;
+  color:white;
+}
+
+.modal-header {
+  background: #808080;
+
+}
