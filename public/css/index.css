@@ -321,3 +321,14 @@ button, input, select, textarea {
 #loginRow {
   background: gray;
 }
+/* Log in Page Styling */
+#backgroundLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #350024;
+    background-image: url("https://images.pexels.com/photos/5490965/pexels-photo-5490965.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-size: cover;
+}
