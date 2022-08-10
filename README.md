@@ -5,13 +5,13 @@ Project 2, Group 5
 
 ## Deployed Link
 Heroku Link: https://adadlaldalkmdlka.herokuapp.com/
-Github Deployed Link: 
+Github Repo Link: https://github.com/sergeyholin/Project-2
 
 ## Inspiration
 What cocktails can you make with the ingredients currently in your kitchen? How do you recreate your favorite cocktail at home? We've made an app that can answer both of these questions in just a few clicks.
 
 ## Description
-Our application Mix It Up allows visitors to the site to search through a database of over six hundred cocktails by name or ingredient in order to find detailed recipes for creating each one.  Visitors are also able to create a profile on the site, save their favorite recipes to their credentials, and login at a later time to view those recipes again.
+Our application Mix It Up allows visitors to the site to search through a database of over six hundred cocktails by name or ingredient in order to find detailed recipes for creating each one.  Visitors are also able to create a profile on the site and login at a later time utilizing those same credentials.
 
 ## User Story
 - User is presented with a homepage displaying Login & Sign Up buttons
