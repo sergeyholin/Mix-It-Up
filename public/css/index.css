@@ -488,7 +488,8 @@ button, input, select, textarea {
 }
 
 .font-black{
-  color:black
+  color:black;
+  background: #d9edf7;
 }
 .modal-body {
   background-color: gainsboro;
@@ -504,3 +505,4 @@ button, input, select, textarea {
   background: #808080;
 
 }
+
