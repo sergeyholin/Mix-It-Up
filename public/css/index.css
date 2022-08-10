@@ -425,13 +425,13 @@ button, input, select, textarea {
   border-color: none;
   background: #E7F0FE;
 }
-label {
+/* label {
   display: inline-block;
   max-width: 100%;
   margin-bottom: 5px;
   font-weight: 700;
   color: black;
-}
+} */
 #allButton:hover {
   background:#9a9a9a6b;
 }
@@ -473,3 +473,16 @@ svg:not(:root) {
     -webkit-text-decoration-skip: objects;
   }
 
+#white-font{
+  color:white;
+}
+button, input, select, textarea {
+  font-size: xx-large;
+  font-family: inherit;
+  font-size: larger;
+  line-height: inherit;
+  border: none;
+  border-color: none;
+  /* height: 2em; */
+  /* width: 2em; */
+}
